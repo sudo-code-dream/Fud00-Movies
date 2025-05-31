@@ -55,8 +55,12 @@ export default function SignUpForm() {
         password,
       },
       {
-        onRequest: () => {},
-        onResponse: () => {},
+        onRequest: () => {
+          setLoading(true);
+        },
+        onResponse: () => {
+          setLoading(false);
+        },
         onError: (e) => {
           toast.error(e.error.message);
         },

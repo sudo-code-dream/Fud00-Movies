@@ -32,7 +32,7 @@ const Button: React.FC<ButtonProps> = ({
       "bg-slate-200 text-slate-800 hover:bg-slate-300 focus:ring-slate-400",
     outline:
       "border border-slate-300 text-slate-700 hover:bg-slate-100 focus:ring-slate-400",
-    ghost: "text-slate-700 hover:bg-slate-100 focus:ring-slate-400",
+    ghost: "text-slate-400 hover:bg-slate-100 focus:ring-slate-400",
   };
 
   const sizeClasses = {
