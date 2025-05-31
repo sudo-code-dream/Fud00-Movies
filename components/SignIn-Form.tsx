@@ -12,12 +12,11 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useState } from "react";
-import { Loader2, Key } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+
 import { signIn } from "@/lib/auth-client";
 import { toast } from "sonner";
-import { error } from "console";
 
 export default function SignInForm() {
   const [email, setEmail] = useState("");
