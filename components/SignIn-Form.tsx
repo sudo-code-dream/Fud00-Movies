@@ -41,7 +41,9 @@ export default function SignInForm() {
 
         onError: (ctx) => {
           setLoading(false);
-          toast.error(ctx.error.message || "Failed to sign in. Please try again.");
+          toast.error(
+            ctx.error.message || "Failed to sign in. Please try again."
+          );
         },
 
         onSuccess: () => {
@@ -115,13 +117,10 @@ export default function SignInForm() {
       </CardContent>
       <CardFooter>
         <div className='flex justify-center w-full border-t py-4'>
-          <p className='text-center text-xs text-neutral-500'>
-            Powered by{" "}
-            <Link
-              href='https://better-auth.com'
-              className='underline'
-              target='_blank'>
-              <span className='dark:text-orange-200/90'>better-auth.</span>
+          <p className='text-center text-sm text-neutral-500'>
+            Don't have an account?
+            <Link href='/sign-up' className='' target='_blank'>
+              <span className='text-orange-400'> Sign up</span>
             </Link>
           </p>
         </div>
