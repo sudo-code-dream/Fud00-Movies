@@ -2,17 +2,12 @@
 import React, { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import AnimatedBackground from "./AnimatedBackground";
-import UnauthorizedContent from "./UnauthorizedContent";
 import HomePageContent from "./HomePageContent";
 
 const HomePage: React.FC = () => {
   useEffect(() => {
     // Update document title
     document.title = "Access Denied | SecureApp";
-
-    // Log access attempt (for example purposes)
-    console.log("Unauthorized access attempt logged");
 
     // Fade in animation for the whole page
     const timer = setTimeout(() => {
@@ -25,7 +20,6 @@ const HomePage: React.FC = () => {
 
   return (
     <div className='min-h-screen flex flex-col bg-slate-900 relative'>
-      
       <div
         id='page-content'
         className='min-h-screen flex flex-col relative z-10 opacity-0 transition-opacity duration-700'>

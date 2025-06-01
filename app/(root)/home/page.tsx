@@ -1,8 +1,11 @@
-import { UnderConstruction } from "@/components/UnderConstruction";
-import React from "react";
+import React from 'react'
 
-const Home = () => {
-  return <UnderConstruction />;
-};
+const Page = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
 
-export default Home;
+export default Page
