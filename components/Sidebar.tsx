@@ -35,7 +35,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
   }, [isOpen, onClose]);
 
   const navigationItems = [
-    { icon: Home, label: "Home", href: "/" },
+    { icon: Home, label: "Home", href: "/home" },
     { icon: Film, label: "Movies", href: "/movies" },
     { icon: Tv, label: "TV Shows", href: "/tv-shows" },
     { icon: Search, label: "Discover", href: "/discover" },

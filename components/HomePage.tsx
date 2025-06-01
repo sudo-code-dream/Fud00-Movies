@@ -6,9 +6,6 @@ import HomePageContent from "./HomePageContent";
 
 const HomePage: React.FC = () => {
   useEffect(() => {
-    // Update document title
-    document.title = "Access Denied | SecureApp";
-
     // Fade in animation for the whole page
     const timer = setTimeout(() => {
       document.getElementById("page-content")?.classList.remove("opacity-0");

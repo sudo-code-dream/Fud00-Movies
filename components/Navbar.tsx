@@ -19,7 +19,7 @@ export const Navbar: React.FC<SidebarProps> = ({
   setSidebarOpen,
 }) => {
   const router = useRouter();
-  const [showSearch, setShowSearch] = useState(false);
+  const [showSearch, setShowSearch] = useState(true);
 
   const { data: session, isPending, error, refetch } = useSession();
 
@@ -58,7 +58,10 @@ export const Navbar: React.FC<SidebarProps> = ({
               className='text-slate-400 hover:text-slate-200 outline-none border-none hover:bg-slate-800/50 transition-colors mr-2'
               aria-label='Toggle menu'>
               {sidebarOpen ? (
-                <X className='h-5 w-5' />
+                <div className='flex items-center justify-center outline-none border-none text-slate-200  gap-1'>
+                  <Menu className='h-5 w-5' />
+                  <p>Browse</p>
+                </div>
               ) : (
                 <>
                   <div className='flex items-center justify-center outline-none border-none text-slate-200  gap-1'>
@@ -80,7 +83,7 @@ export const Navbar: React.FC<SidebarProps> = ({
                 </button>
                 <input
                   type='text'
-                  placeholder='Search movies, TV shows...'
+                  placeholder='Search...'
                   className={`bg-transparent border-none outline-none text-slate-200 px-2 py-1 w-full transition-all duration-300 ${
                     showSearch ? "opacity-100" : "opacity-0 w-0"
                   }`}
